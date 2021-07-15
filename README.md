@@ -1,6 +1,6 @@
 # fund-tracker-backend
 
-This project serves as an API to provide information about various Turkish ETFs. It is written in Spring framework and it is developed be consumed by [fund-tracker-app](https://github.com/wozyn/fund-tracker-appd) mobile application. The API is used to display information about different ETFs, calculate unrealized gains/losses, to search for different ETFs, to provide a summary of client's portfolio and to provide other related services to the consumer.
+This project serves as an API to provide information about various Turkish ETFs. It is written in Spring framework and it is developed to be consumed by [fund-tracker-app](https://github.com/wozyn/fund-tracker-app) mobile application. The API is used to display information about different ETFs, calculate unrealized gains/losses, to search for different ETFs, to provide a summary of client's portfolio and to provide other related services to the consumer.
 
 Data is being stored in a PostgreSql database, and Hibernate ORM is used to map the application models with database tables.
 
@@ -182,3 +182,7 @@ Data is being stored in a PostgreSql database, and Hibernate ORM is used to map 
 > | Date |  required    | date   | Date of the price information to be obtained                    |
 
 </details>
+
+-------------------------------------------------------
+
+The data is being updated via [web-fetch](https://github.com/wozyn/web-fetch) project that retrieves the data from [SPK Rest API]("https://ws.spk.gov.tr/").
